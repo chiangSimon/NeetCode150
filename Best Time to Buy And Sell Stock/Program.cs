@@ -24,6 +24,29 @@
 
             return maxProfit;
         }
+
+        /// <summary>
+        /// 優化版
+        /// </summary>
+        /// <param name="prices"></param>
+        /// <returns></returns>
+        public int MaxProfit2(int[] prices)
+        {
+            if (prices.Length < 2)
+                return 0;
+
+            int maxProfit = 0;
+            int minPrice = prices[0];
+            for (int i = 1; prices.Length > i; i++)
+            {
+                int currentProfit = prices[i] - minPrice ;
+                maxProfit = currentProfit > maxProfit ? currentProfit : maxProfit;
+
+                minPrice = prices[i] < minPrice ? prices[i] : minPrice;
+            }
+
+            return maxProfit;
+        }
     }
 
 
@@ -39,6 +62,10 @@
             price = [10, 1, 5, 6, 7, 1];
             var result = solution.MaxProfit(price);
             Console.WriteLine($"最大獲利：{result}");
+
+            var result2 = solution.MaxProfit2(price);
+            Console.WriteLine($"最大獲利：{result2}");
+
         }
     }
 }
