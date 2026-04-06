@@ -9,17 +9,25 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contains Duplicate", "Conta
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Valid Anagram", "Valid Anagram\Valid Anagram.csproj", "{67F211F4-D381-403E-ACB4-E41EE8E9E0EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Two Sum", "Two Sum\Two Sum.csproj", "{F74996F2-B960-4247-B835-38E01F2B59B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Two Sum", "Two Sum\Two Sum.csproj", "{F74996F2-B960-4247-B835-38E01F2B59B8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Arrays & Hashing", "Arrays & Hashing", "{BE50DEB8-E5A1-4C05-94E2-7713D0414A6F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Two Pointers", "Two Pointers", "{F78E3D92-0306-4BE6-AC34-3264BEDF2C42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valid Palindrome", "Valid Palindrome\Valid Palindrome.csproj", "{4C37731E-FA8E-4E78-9E70-02AC215D62F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Valid Palindrome", "Valid Palindrome\Valid Palindrome.csproj", "{4C37731E-FA8E-4E78-9E70-02AC215D62F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sliding Window", "Sliding Window", "{57B082EE-B4E1-473A-8268-A8D771C0B727}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Best Time to Buy And Sell Stock", "Best Time to Buy And Sell Stock\Best Time to Buy And Sell Stock.csproj", "{872E2BD9-5357-4FA7-AC3E-4B920966442F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Best Time to Buy And Sell Stock", "Best Time to Buy And Sell Stock\Best Time to Buy And Sell Stock.csproj", "{872E2BD9-5357-4FA7-AC3E-4B920966442F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Binary Search", "Binary Search", "{421668AB-6CFA-4A53-A80F-5DAD49C180FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binary_Search", "Binary_Search\Binary_Search.csproj", "{1D397646-5793-48A5-B46D-86479563644A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stackl", "Stackl", "{F0EE9753-76AF-40D2-AD51-0D41CA9E2209}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valid Parentheses", "Valid Parentheses\Valid Parentheses.csproj", "{B20D3D5A-F82D-4849-B548-9EE27E92F766}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +59,14 @@ Global
 		{872E2BD9-5357-4FA7-AC3E-4B920966442F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{872E2BD9-5357-4FA7-AC3E-4B920966442F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{872E2BD9-5357-4FA7-AC3E-4B920966442F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D397646-5793-48A5-B46D-86479563644A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D397646-5793-48A5-B46D-86479563644A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D397646-5793-48A5-B46D-86479563644A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D397646-5793-48A5-B46D-86479563644A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B20D3D5A-F82D-4849-B548-9EE27E92F766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B20D3D5A-F82D-4849-B548-9EE27E92F766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B20D3D5A-F82D-4849-B548-9EE27E92F766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B20D3D5A-F82D-4849-B548-9EE27E92F766}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +78,8 @@ Global
 		{F74996F2-B960-4247-B835-38E01F2B59B8} = {BE50DEB8-E5A1-4C05-94E2-7713D0414A6F}
 		{4C37731E-FA8E-4E78-9E70-02AC215D62F8} = {F78E3D92-0306-4BE6-AC34-3264BEDF2C42}
 		{872E2BD9-5357-4FA7-AC3E-4B920966442F} = {57B082EE-B4E1-473A-8268-A8D771C0B727}
+		{1D397646-5793-48A5-B46D-86479563644A} = {421668AB-6CFA-4A53-A80F-5DAD49C180FD}
+		{B20D3D5A-F82D-4849-B548-9EE27E92F766} = {F0EE9753-76AF-40D2-AD51-0D41CA9E2209}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33ED550B-B0F2-4E3A-9017-F9AD450160A2}
