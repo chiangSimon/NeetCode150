@@ -23,11 +23,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Best Time to Buy And Sell S
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Binary Search", "Binary Search", "{421668AB-6CFA-4A53-A80F-5DAD49C180FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binary_Search", "Binary_Search\Binary_Search.csproj", "{1D397646-5793-48A5-B46D-86479563644A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Binary_Search", "Binary_Search\Binary_Search.csproj", "{1D397646-5793-48A5-B46D-86479563644A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stackl", "Stackl", "{F0EE9753-76AF-40D2-AD51-0D41CA9E2209}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Stack", "Stack", "{F0EE9753-76AF-40D2-AD51-0D41CA9E2209}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valid Parentheses", "Valid Parentheses\Valid Parentheses.csproj", "{B20D3D5A-F82D-4849-B548-9EE27E92F766}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Valid Parentheses", "Valid Parentheses\Valid Parentheses.csproj", "{B20D3D5A-F82D-4849-B548-9EE27E92F766}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Linked List", "Linked List", "{9D413346-DAC7-4861-ACB6-73D54DFB10E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse Linked List", "Reverse Linked List\Reverse Linked List.csproj", "{B48CBA80-127B-47A6-ACA2-DE1B197CDE87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,6 +71,10 @@ Global
 		{B20D3D5A-F82D-4849-B548-9EE27E92F766}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B20D3D5A-F82D-4849-B548-9EE27E92F766}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B20D3D5A-F82D-4849-B548-9EE27E92F766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B48CBA80-127B-47A6-ACA2-DE1B197CDE87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B48CBA80-127B-47A6-ACA2-DE1B197CDE87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B48CBA80-127B-47A6-ACA2-DE1B197CDE87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B48CBA80-127B-47A6-ACA2-DE1B197CDE87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +88,7 @@ Global
 		{872E2BD9-5357-4FA7-AC3E-4B920966442F} = {57B082EE-B4E1-473A-8268-A8D771C0B727}
 		{1D397646-5793-48A5-B46D-86479563644A} = {421668AB-6CFA-4A53-A80F-5DAD49C180FD}
 		{B20D3D5A-F82D-4849-B548-9EE27E92F766} = {F0EE9753-76AF-40D2-AD51-0D41CA9E2209}
+		{B48CBA80-127B-47A6-ACA2-DE1B197CDE87} = {9D413346-DAC7-4861-ACB6-73D54DFB10E0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33ED550B-B0F2-4E3A-9017-F9AD450160A2}
