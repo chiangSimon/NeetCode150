@@ -10,18 +10,17 @@ namespace Two_Sum
 
         public int[] TwoSum(int[] nums, int target)
         {
-            int[] result= new int [2];
-
-            for (int i =0; i < nums.Length; i++) 
+            int[] result = new int[2];
+            for (int i = 0; nums.Length > i; i++) 
             {
-                int matchNum = target - nums[i];
-                int matchIndex = Array.IndexOf(nums, matchNum);
-                if (matchIndex != -1) 
+                for (int j = i+1; nums.Length > j; j++) 
                 {
-                    result[0] = i;
-                    result[1] = matchIndex;
+                    if ((nums[i] + nums[j]) == target) 
+                    {
+                        result = [i, j];
+                        return result;
+                    }
                 }
-
             }
             return result;
         }

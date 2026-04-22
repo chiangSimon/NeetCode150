@@ -7,11 +7,11 @@
     {
         public bool HasDuplicate(int[] nums)
         {
-            for (int i = 0; i < nums.Length; i++)
+            for (int i = 0; nums.Length > i; i++) 
             {
-                for (int j = i+1; j < nums.Length; j++)
+                for (int j = i+1; nums.Length > j; j++) 
                 {
-                    if (nums[i] == nums[j])
+                    if (i == j) 
                     {
                         return true;
                     }

@@ -5,21 +5,21 @@
         public int Search(int[] nums, int target)
         {
             int left = 0;
-            int right = nums.Length - 1;
-            while (left <= right)
+            int right = nums.Length -1 ;
+            while (right >= left) 
             {
-                int middle = left + (right - left) / 2;
-                if (target == nums[middle])
+                int middle = (left + right) / 2;
+                if (target > nums[middle]) 
                 {
-                    return middle;
+                    left = middle  + 1;
                 }
-                else if (target > nums[middle])
-                {
-                    left = middle + 1;
-                }
-                else
+                else if(target < nums[middle]) 
                 {
                     right = middle - 1;
+                }
+                else 
+                {
+                    return middle;
                 }
 
             }
@@ -34,7 +34,7 @@
         {
             Solution solution = new();
             int[] intput1 = [-1, 0, 2, 4, 6, 8];
-            var result = solution.Search(intput1, 4);
+            var result = solution.Search(intput1, 8);
             Console.WriteLine(result);
         }
     }
