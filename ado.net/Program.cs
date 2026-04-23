@@ -7,7 +7,7 @@ namespace ado.net
     public class AttendanceHelper
     {
         string connectingString = "Data Source=DESKTOP-H3RAS03;Initial Catalog=Home;Integrated Security=True;Persist Security Info=False;Pooling=False;Multiple Active Result Sets=False;Encrypt=True;Trust Server Certificate=True;Command Timeout=0";
-        string filePath = @"C:\Users\ivonn\source\repos\NeetCode150-2\file\log.txt";
+        string filePath = @"C:\Users\ivonn\source\repos\NeetCode150-2\file\attendance.txt";
 
 
         public void CreateAttendacne()
@@ -29,6 +29,17 @@ namespace ado.net
                     string ClockInTime = value[3];
                     string ClockoutTime = value[4];
 
+
+                    using (SqlCommand cmd = new SqlCommand(sql, connection))
+                    {
+                        cmd.Parameters.AddWithValue("@EmployeeId", EmployeeId);
+                        cmd.Parameters.AddWithValue("@EmployeeName", EmployeeName);
+                        cmd.Parameters.AddWithValue("@WorkDay", WorkDay);
+                        cmd.Parameters.AddWithValue("@ClockInTime", ClockInTime);
+                        cmd.Parameters.AddWithValue("@ClockoutTime", ClockoutTime);
+                        cmd.ExecuteNonQuery();
+                    }
+
                 }
             }
         }
@@ -38,7 +49,9 @@ namespace ado.net
         {
             static void Main(string[] args)
             {
-                Console.WriteLine("Hello, World!");
+                AttendanceHelper attendanceHelper = new();
+                attendanceHelper.CreateAttendacne();
+                Console.WriteLine("finish!");
             }
         }
     }
