@@ -16,7 +16,21 @@ namespace ado.net
 
             using (SqlConnection connection = new SqlConnection(connectingString))
             {
-                string sql = @"insert into attendance  values (@EmployeeId, @EmployeeName, @WorkDay, @ClockInTime, @ClockoutTime)";
+                string sql = @"
+if exists (select EmployeeId from attendance where EmployeeId = @EmployeeId)
+begin 
+update attendance set 
+EmployeeId = EmployeeId,
+EmployeeName = @EmployeeName,
+WorkDay = @WorkDay,
+ClockInTime = @ClockInTime,
+ClockoutTime = @ClockoutTime
+where EmployeeId = @EmployeeId
+end
+else
+begin
+insert into attendance  values (@EmployeeId, @EmployeeName, @WorkDay, @ClockInTime, @ClockoutTime)
+end";
 
                 connection.Open();
                 // Do work here.
