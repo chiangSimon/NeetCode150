@@ -20,9 +20,9 @@
             string cleanValue = string.Concat(s.Where(x => char.IsLetterOrDigit(x))).ToLower();
             char[] temp1 = cleanValue.ToCharArray();
             char[] temp2 = cleanValue.Reverse().ToArray();
-            
 
-            return temp1 == temp2;
+            // array不能直接用 == 比較兩邊是否一致，需要用 SequenceEqual
+            return temp1.SequenceEqual(temp2);
         }
     }
 
@@ -35,7 +35,7 @@
             bool Q1 = solution.IsPalindrome("Was it a car or a cat I saw?");
             Console.WriteLine($"Q1：{Q1}");
 
-            bool Q2 = solution.IsPalindrome("Was it a car or a cat I saw?1");
+            bool Q2 = solution.IsPalindrome2("Was it a car or a cat I saw?2");
             Console.WriteLine($"Q2：{Q2}");
         }
     }
