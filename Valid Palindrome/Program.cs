@@ -35,7 +35,7 @@
             bool Q1 = solution.IsPalindrome("Was it a car or a cat I saw?");
             Console.WriteLine($"Q1：{Q1}");
 
-            bool Q2 = solution.IsPalindrome("Was it a car or a cat I saw?1");
+            bool Q2 = solution.IsPalindrome("Was it a car or a cat I saw?");
             Console.WriteLine($"Q2：{Q2}");
         }
     }

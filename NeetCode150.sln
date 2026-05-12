@@ -33,7 +33,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Linked List", "Linked List"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverse Linked List", "Reverse Linked List\Reverse Linked List.csproj", "{B48CBA80-127B-47A6-ACA2-DE1B197CDE87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ado.net", "ado.net\ado.net.csproj", "{ECF739A1-DAF6-4DB7-9F5E-9C87511DE351}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ado.net", "ado.net\ado.net.csproj", "{ECF739A1-DAF6-4DB7-9F5E-9C87511DE351}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpperLowerReverse", "UpperLowerReverse\UpperLowerReverse.csproj", "{E3D14C59-490F-4E8B-87F4-8F88708A6B9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{ECF739A1-DAF6-4DB7-9F5E-9C87511DE351}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECF739A1-DAF6-4DB7-9F5E-9C87511DE351}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECF739A1-DAF6-4DB7-9F5E-9C87511DE351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3D14C59-490F-4E8B-87F4-8F88708A6B9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3D14C59-490F-4E8B-87F4-8F88708A6B9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3D14C59-490F-4E8B-87F4-8F88708A6B9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3D14C59-490F-4E8B-87F4-8F88708A6B9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +101,7 @@ Global
 		{1D397646-5793-48A5-B46D-86479563644A} = {421668AB-6CFA-4A53-A80F-5DAD49C180FD}
 		{B20D3D5A-F82D-4849-B548-9EE27E92F766} = {F0EE9753-76AF-40D2-AD51-0D41CA9E2209}
 		{B48CBA80-127B-47A6-ACA2-DE1B197CDE87} = {9D413346-DAC7-4861-ACB6-73D54DFB10E0}
+		{E3D14C59-490F-4E8B-87F4-8F88708A6B9F} = {BE50DEB8-E5A1-4C05-94E2-7713D0414A6F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {33ED550B-B0F2-4E3A-9017-F9AD450160A2}
